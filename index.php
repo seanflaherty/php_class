@@ -49,7 +49,18 @@
       echo "<p>
           Average:  $average</p>"
       ?>
+       <h2>Loops</h2>
+       <?php
+       $apples = 11;
 
+       $x = 1;
+
+       while($apples >= 1) {
+           echo "The number of apples is: $apples <br>";
+           $apples--;
+       }
+        echo "<p>All apples eaten</p>"
+        ?>
 
 
 
