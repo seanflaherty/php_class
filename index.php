@@ -112,10 +112,26 @@
             }
 
         lcd($array,1);
+    ?>
+
+        <h2>Exercise 1</h2>
+
+    <?php
+        $carMakers = array('Ford', 'Mazda', 'Ferrari');
+
+        print_r($carMakers);
+
+    ?>
+    <br />
+    <br />
+    <?php
+        //Associative array
+        $car = array('make' => 'Ferrari', 'model' => '458', 'color' => 'Red');
+        var_dump($car);
 
 
 
-        ?>
+    ?>
 
 
 
