@@ -64,6 +64,8 @@
         echo "<p>All apples eaten</p>"
         ?>
 
+        <h2>Homework Goes Here</h2>
+
 
 
 
