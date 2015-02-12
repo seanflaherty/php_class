@@ -66,6 +66,57 @@
 
         <h2>Homework Goes Here</h2>
 
+        <!--
+        This is the homework that was listed on the last slide:
+
+        Create three variables to hold the three numbers 3, 7 and 15.
+        Use if statements to determine which number is the largest and which is the smallest.
+        Subtract the smallest number from the largest number and assign that value to a variable.
+        Display a statement saying that you like the number $result.
+
+        Challenge: Use a loop to calculate the Least Common Denominator (LCD) for 1/3 and 1/7.
+        (LCD = the smallest number that is evenly divisible by both of the denominators, 3 and 7).
+
+
+        -->
+
+        <?php
+            $three = 3;
+            $seven = 7;
+            $five = 5;
+
+            $largest = max($three, $seven, $five);
+            $smallest = min($three, $seven, $five);
+            $result = ($largest - $smallest);
+            echo "I like $result <br />";
+
+            $array = array($largest, $smallest);
+
+            function lcd($array,$x) {
+
+                $mod_sum = 0;
+
+                for ($int=1; $int < count($array); $int++) {
+                    $modulus[$int] = ($array[0]*$x) % ($array[$int]);
+                    $mod_sum = $mod_sum + $modulus[$int];
+                }
+
+                if (!$mod_sum) {
+                    echo "LCD: ".($array[0]*$x)."\n";
+                }
+
+                else {
+                    lcd($array,$x+1);
+                }
+
+            }
+
+        lcd($array,1);
+
+
+
+        ?>
+
 
 
 
