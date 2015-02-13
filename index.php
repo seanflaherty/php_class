@@ -133,7 +133,30 @@
 
     ?>
 
+    <h2>Exercise 2</h2>
+    <!--
+    Create a variable containing the string "Learning PHP at Betamore is Awesome!"
+    Display the string in alternating capital/lowercase letters
 
+    -->
+
+    <?php
+
+    $str = "Learning PHP at Betamore is Awesome!";
+    $i = 0;
+    $newStr = '';
+
+    while ($i < (strlen($str))) {
+        if ($i%2) {
+            $newStr .= strtoupper($str[$i]);
+        } else {
+            $newStr .= strtolower($str[$i]);
+        }
+        $i++;
+    }
+    echo $newStr;
+
+    ?>
 
 
 
