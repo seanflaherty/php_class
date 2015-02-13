@@ -146,8 +146,8 @@
     $i = 0;
     $newStr = '';
 
-    while ($i < (strlen($str))) {
-        if ($i%2) {
+    while ($i < strlen($str)) {
+        if ($i % 2) {
             $newStr .= strtoupper($str[$i]);
         } else {
             $newStr .= strtolower($str[$i]);
@@ -158,6 +158,43 @@
 
     ?>
 
+    <br />
+    <br />
+    <h2>Exercise 3</h2
+
+    <!--
+    Create an array of books for a store with the key being the book title
+    and the value being price
+
+    Create a second array with country names
+
+    Sort each array using ksort() and asort()
+
+    Force asort() to sort items numerically and alphabetically
+
+    -->
+    <?php
+        $books = array(
+            'Limbo' => 5.99,
+            'Dune' => 7.99,
+            'Radix' => 9.99 );
+
+        $countries = array('USA', 'Canada', 'Mexico');
+
+        ksort($books, SORT_NATURAL);
+
+        print_r($books);
+
+        echo '<br />';
+
+        asort($countries, SORT_NUMERIC);
+
+        print_r($countries);
+
+
+
+
+    ?>
 
 
     </body>
